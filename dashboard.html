@@ -1,0 +1,413 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	<title>ZAIDI YA FEDHA</title>
+	
+
+	<!-- STYLESHEETS-->
+	<link rel="stylesheet" type="text/css" href="libraries/bootstrap/css/bootstrap.css">
+
+	<!-- CUSTOM STYLES -->
+	<link rel="stylesheet" type="text/css" href="assets/css/dashboard.css">
+
+	
+	
+
+
+	<!-- WEBFONT -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+	<!-- ICON -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+</head>
+<body class="">
+	<div class="section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-2 col-lg-2">
+					<div class="leftbar">
+						<img src="assets/img/cross-out.svg" id="closebtn">
+						<div class="__sidep">
+							<div class="__dashlogoimg">
+								<a href=""><img src="assets/img/logo.png" class=""></a>
+							</div>
+							<!-- <a href="dashboard.html"><p class="activedashboard" >
+								<img src="assets/img/home.svg" class="__leftbarimg">Home
+							</p></a>
+
+							<a href="member.html"><p class="__dashboard">
+								<img src="assets/img/member.svg" class="__leftbarimg">Members profile
+							</p></a>
+							
+
+							<a href="discussion.html"><p class="__dashboard">
+								<img src="assets/img/discussion.svg" class="__leftbarimg">Discussion
+							</p></a>
+
+							<a href="event.html"><p class="__dashboard">
+								<img src="assets/img/event.svg" class="__leftbarimg">Events Calender
+							</p></a>
+
+							<a href="library.html"><p class="__dashboard">
+								<img src="assets/img/library.svg" class="__leftbarimg">Resource Library
+							</p></a>
+
+							<a href="bill.html"><p class="__dashboard">
+								<img src="assets/img/bill.svg" class="__leftbarimg">Bills
+							</p></a>
+
+							<div class="item">
+         						<a class="sub-btn __dashboard"><i class="fas fa-table"></i>Tables<i class="fas fa-angle-right dropdown"></i></a>
+					         	<div class="sub-menu">
+						           	<a href="#" class="sub-item">Sub Item 01</a>
+						           	<a href="#" class="sub-item">Sub Item 02</a>
+						           	<a href="#" class="sub-item">Sub Item 03</a>
+					         	</div>
+					       	</div>
+
+							<a href="export.html"><p class="__dashboard">
+								<img src="assets/img/export.svg" class="__leftbarimg">Export
+							</p></a>
+
+							<a href="logout.html"><p class="__logout text-center">
+								Log Out
+							</p></a> -->
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xl-10 col-lg-10 col-md-12 __pd-0">
+					<a href="#" class="navbar-brand __navbar-brand1" id="openSidebar"><i class=" fa fa-bars" onclick="openSidebar()" ></i></a>
+					
+					
+
+					<section>
+						<div class="__house">
+							<p class="__dashup">DASHBOARD</p>
+							<div class="__zaiflex">
+								<p class="__welad">Welcome, Admin</p>
+								<select class="form-select" aria-label="Default select example">
+								  	<option selected>Open this select menu</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+								  	<option value="3">Three</option>
+								</select>
+							</div>
+
+							
+							<div class="__zaregflex">
+								<p class="__radet">REGISTERED MEMBERS</p>
+								<p class="__zareg"> <a href="">See all</a> <img src="assets/img/allarrow.svg"> </p>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table __table">
+									<thead>
+										<tr>
+											<th>First Name</th>
+											<th>Last Name</th>
+											<th>Gender</th>
+											<th>Business Name</th>
+											<th>Category</th>
+											<th>Location(Country)</th>
+											<th>State</th>
+											<th>Years in Operation</th>
+											<th>Industry</th>
+											<th>Intervention Needs</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<span class="__span">First Name</span>
+												<p class="__namep">Seminire</p>
+											</td>
+											<td>
+												<span class="__span">Last Name</span>
+												<p class="__namep">Olabode</p>
+											</td>
+											<td>
+												<span class="__span">Gender</span>
+												<p class="__namepf">Female</p>
+											</td>
+											<td>
+												<span class="__span">Business Name</span>
+												<p class="__namep">Zions Limited</p>
+											</td>
+											<td>
+												<span class="__span">Category</span>
+												<p class="__namebugm badge">Micro</p>
+											</td>
+											<td>
+												<span class="__span">Location(Country)</span>
+												<p class="__namep">Nigeria</p>
+											</td>
+											<td>
+												<span class="__span">State</span>
+												<p class="__namep">Lagos State</p>
+											</td>
+											<td>
+												<span class="__span">Years in Operation</span>
+												<p class="__namep">3</p>
+											</td>
+											<td>
+												<span class="__span">Industry</span>
+												<p class="__namep">Entertainment</p>
+											</td>
+											<td>
+												<span class="__span">Intervention Needs</span>
+												<p class="__namepst">Strategy</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="__span">First Name</span>
+												<p class="__namep">Seminire</p>
+											</td>
+											<td>
+												<span class="__span">Last Name</span>
+												<p class="__namep">Olabode</p>
+											</td>
+											<td>
+												<span class="__span">Gender</span>
+												<p class="__namepm">Male</p>
+											</td>
+											<td>
+												<span class="__span">Business Name</span>
+												<p class="__namep">Zions Limited</p>
+											</td>
+											<td>
+												<span class="__span">Category</span>
+												<p class="__namebugs badge">Small</p>
+											</td>
+											<td>
+												<span class="__span">Location(Country)</span>
+												<p class="__namep">Nigeria</p>
+											</td>
+											<td>
+												<span class="__span">State</span>
+												<p class="__namep">Lagos State</p>
+											</td>
+											<td>
+												<span class="__span">Years in Operation</span>
+												<p class="__namep">3</p>
+											</td>
+											<td>
+												<span class="__span">Industry</span>
+												<p class="__namep">Entertainment</p>
+											</td>
+											<td>
+												<span class="__span">Intervention Needs</span>
+												<p class="__namepst">Strategy</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="__span">First Name</span>
+												<p class="__namep">Seminire</p>
+											</td>
+											<td>
+												<span class="__span">Last Name</span>
+												<p class="__namep">Olabode</p>
+											</td>
+											<td>
+												<span class="__span">Gender</span>
+												<p class="__namepf">Female</p>
+											</td>
+											<td>
+												<span class="__span">Business Name</span>
+												<p class="__namep">Zions Limited</p>
+											</td>
+											<td>
+												<span class="__span">Category</span>
+												<p class="__namebugm badge">Micro</p>
+											</td>
+											<td>
+												<span class="__span">Location(Country)</span>
+												<p class="__namep">Nigeria</p>
+											</td>
+											<td>
+												<span class="__span">State</span>
+												<p class="__namep">Lagos State</p>
+											</td>
+											<td>
+												<span class="__span">Years in Operation</span>
+												<p class="__namep">3</p>
+											</td>
+											<td>
+												<span class="__span">Industry</span>
+												<p class="__namep">Entertainment</p>
+											</td>
+											<td>
+												<span class="__span">Intervention Needs</span>
+												<p class="__namepst">Strategy</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="__span">First Name</span>
+												<p class="__namep">Seminire</p>
+											</td>
+											<td>
+												<span class="__span">Last Name</span>
+												<p class="__namep">Olabode</p>
+											</td>
+											<td>
+												<span class="__span">Gender</span>
+												<p class="__namepm">Male</p>
+											</td>
+											<td>
+												<span class="__span">Business Name</span>
+												<p class="__namep">Zions Limited</p>
+											</td>
+											<td>
+												<span class="__span">Category</span>
+												<p class="__namebugm badge">Micro</p>
+											</td>
+											<td>
+												<span class="__span">Location(Country)</span>
+												<p class="__namep">Nigeria</p>
+											</td>
+											<td>
+												<span class="__span">State</span>
+												<p class="__namep">Lagos State</p>
+											</td>
+											<td>
+												<span class="__span">Years in Operation</span>
+												<p class="__namep">3</p>
+											</td>
+											<td>
+												<span class="__span">Industry</span>
+												<p class="__namep">Entertainment</p>
+											</td>
+											<td>
+												<span class="__span">Intervention Needs</span>
+												<p class="__namepst">Strategy</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="__span">First Name</span>
+												<p class="__namep">Seminire</p>
+											</td>
+											<td>
+												<span class="__span">Last Name</span>
+												<p class="__namep">Olabode</p>
+											</td>
+											<td>
+												<span class="__span">Gender</span>
+												<p class="__namepf">Female</p>
+											</td>
+											<td>
+												<span class="__span">Business Name</span>
+												<p class="__namep">Zions Limited</p>
+											</td>
+											<td>
+												<span class="__span">Category</span>
+												<p class="__namebugmd badge">Medium</p>
+											</td>
+											<td>
+												<span class="__span">Location(Country)</span>
+												<p class="__namep">Nigeria</p>
+											</td>
+											<td>
+												<span class="__span">State</span>
+												<p class="__namep">Lagos State</p>
+											</td>
+											<td>
+												<span class="__span">Years in Operation</span>
+												<p class="__namep">3</p>
+											</td>
+											<td>
+												<span class="__span">Industry</span>
+												<p class="__namep">Entertainment</p>
+											</td>
+											<td>
+												<span class="__span">Intervention Needs</span>
+												<p class="__namepst">Strategy</p>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="__span">First Name</span>
+												<p class="__namep">Seminire</p>
+											</td>
+											<td>
+												<span class="__span">Last Name</span>
+												<p class="__namep">Olabode</p>
+											</td>
+											<td>
+												<span class="__span">Gender</span>
+												<p class="__namepm">Male</p>
+											</td>
+											<td>
+												<span class="__span">Business Name</span>
+												<p class="__namep">Zions Limited</p>
+											</td>
+											<td>
+												<span class="__span">Category</span>
+												<p class="__namebugl badge">Large</p>
+											</td>
+											<td>
+												<span class="__span">Location(Country)</span>
+												<p class="__namep">Nigeria</p>
+											</td>
+											<td>
+												<span class="__span">State</span>
+												<p class="__namep">Lagos State</p>
+											</td>
+											<td>
+												<span class="__span">Years in Operation</span>
+												<p class="__namep">3</p>
+											</td>
+											<td>
+												<span class="__span">Industry</span>
+												<p class="__namep">Entertainment</p>
+											</td>
+											<td>
+												<span class="__span">Intervention Needs</span>
+												<p class="__namepst">Strategy</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="__fotflex __flexsmail">
+								<p class="__fotcopy __mobidown">(C) <script>document.write(new Date().getFullYear())</script>. ZLF. All Rights Reserved</p>
+
+								<p class="__fotlinks __mobiup">
+									<a href="">Home</a>    |    <a href="">Terms of Use</a>     |     <a href="">Privacy Policy</a>
+								</p>
+							</div>
+						</div>
+					</section>
+				</div>			
+			</div>
+		</div>
+	</div>
+
+		
+
+
+	
+
+
+	<script type="text/javascript" src="libraries/bootstrap/js/jquery-3.1.1.min.js"></script>
+
+    <script src="libraries/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    
+</body>
+
+</html>
