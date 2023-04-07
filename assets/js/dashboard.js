@@ -21,11 +21,12 @@ const getUsers = () => {
       data.forEach((user) => {
         tab += `
             <tr>
-                <td class="__namep">${user.first_name} </td>
-                <td class="__namep">${user.last_name} </td>
+                <td class="__namep">${
+                  user.first_name + " " + user.last_name
+                } </td>
                 <td class="__namepf">${user.gender} </td>
                 <td class="__namep">${user.business_name} </td>
-                <td class="__namebugm badge">${user.category_of_business} </td>
+                <td>${user.category_of_business} </td>
                 <td class="__namep">${user.country} </td>
                 <td class="__namep">${user.state} </td>
                 <td class="__namep">${user.experience} </td>
