@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -38,7 +38,7 @@
 			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3"></div>
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
 				<form>
-	                <div class="row">
+	                <!-- <div class="row">
 	                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
 	                        <div class="mb-3">
 	                            <label for="exampleInputEmail1" class="form-label __fomlbs">First Name</label>
@@ -51,7 +51,8 @@
 	                            <input type="text" class="form-control __forminp" id="exampleInputEmail1" aria-describedby="emailHelp">
 	                        </div>
 	                    </div>
-	                </div>
+	                </div> -->
+					<p class="text-center text-danger" id="error"></p>
 	                <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label __fomlbs">Email</label>
                         <input type="email" class="form-control __forminp" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -59,11 +60,11 @@
 
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label __fomlbs">Password</label>
-                        <input type="password" class="form-control __forminp" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="password" class="form-control __forminp" id="password" aria-describedby="emailHelp">
                     </div>
                     <p class="text-end"><a href="forget.html">Forget Password</a></p>
-                    <a href="dashboard.html" class="btn __formbtn">Login</a>
-	                <!-- <button type="submit" class="btn __formbtn">Login</button> -->
+                    <a onclick="loginUser()" id="submit" class="btn __formbtn">Login</a>
+	                <!-- <button onclick="loginUser()" type="submit" class="btn __formbtn">Login</button> -->
 	            </form>
 			</div>
 			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3"></div>
