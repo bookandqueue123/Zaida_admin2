@@ -16,11 +16,13 @@ const getUsers = () => {
       }
     })
     .then((data) => {
-      console.log(data);
+      console.log(data.length);
+      document.getElementById("number_of_users").innerHTML = data.length;
       let tab = "";
-      data.forEach((user) => {
+      data.forEach((user, index) => {
         tab += `
             <tr>
+                <td class="__namep">${index + 1} </td>
                 <td class="__namep">${
                   user.first_name + " " + user.last_name
                 } </td>
