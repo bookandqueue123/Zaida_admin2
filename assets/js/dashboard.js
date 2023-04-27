@@ -8,7 +8,6 @@ const getUsers = () => {
   })
     .then((response) => {
       if (response.ok) {
-        console.log(response);
         return response.json();
       } else {
         console.log(response);
@@ -16,7 +15,6 @@ const getUsers = () => {
       }
     })
     .then((data) => {
-      console.log(data.length);
       document.getElementById("number_of_users").innerHTML = data.length;
       let tab = "";
       data.forEach((user, index) => {
@@ -28,12 +26,12 @@ const getUsers = () => {
                 } </td>
                 <td class="__namepf">${user.gender} </td>
                 <td class="__namep">${user.business_name} </td>
-                <td>${user.category_of_business} </td>
+                <td class="__namec">${user.category_of_business} </td>
                 <td class="__namep">${user.country} </td>
                 <td class="__namep">${user.state} </td>
                 <td class="__namep">${user.experience} </td>
                 <td class="__namep">${user.industry} </td>
-                <td class="__namepst">${user.intervention_needs} </td>
+                <td class="__namepf">${user.intervention_needs} </td>
             </tr>`;
       });
       document.getElementById("users").innerHTML = tab;
@@ -45,4 +43,51 @@ const getUsers = () => {
 
 window.onload = function () {
   getUsers();
+};
+
+const searchInput = document.getElementById("search-input");
+
+const table = document.getElementById("users");
+
+searchInput.addEventListener("keyup", function () {
+  const searchText = searchInput.value.toLowerCase();
+
+  for (let i = 1; i < table.rows.length; i++) {
+    const row = table.rows[i];
+    let foundMatch = false;
+    for (let j = 0; j < row.cells.length; j++) {
+      const cellText = row.cells[j].textContent.toLowerCase();
+
+      if (cellText.includes(searchText)) {
+        foundMatch = true;
+        break;
+      }
+    }
+    if (foundMatch) {
+      row.style.display = "";
+    } else {
+      row.style.display = "none";
+    }
+  }
+});
+
+const exportCSV = () => {
+  fetch("https://zaida-website.herokuapp.com/api/admin/exportcsv", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${localStorage.getItem("token")}`,
+    },
+  })
+    .then((response) => response.blob())
+    .then((blob) => {
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "data.csv";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
 };

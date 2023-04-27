@@ -95,18 +95,21 @@
 							<p class="__dashup">DASHBOARD</p>
 							<div class="__zaiflex">
 								<p class="__welad">Welcome, Admin</p>
-								<select class="form-select" aria-label="Default select example">
+								<!-- <select class="form-select" aria-label="Default select example">
 								  	<option selected>Open this select menu</option>
 									<option value="1">One</option>
 									<option value="2">Two</option>
 								  	<option value="3">Three</option>
-								</select>
+								</select> -->
+								<a onclick="exportCSV()" class="btn __exportbtn">Export CSV</a>
 							</div>
 
 							
 							<div class="__zaregflex">
 								<p class="__radet">REGISTERED MEMBERS (<span id="number_of_users"></span>)</p>
-								<p class="__zareg"> <a href="">See all</a> <img src="assets/img/allarrow.svg"> </p>
+								<div>
+									<input type="text" class="form-control __forminp" id="search-input" placeholder="Search">
+								</div>
 							</div>
 
 							<div class="table-responsive">

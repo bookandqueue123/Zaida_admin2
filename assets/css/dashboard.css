@@ -567,11 +567,15 @@ color: #FFFFFF;
   font-weight: 500;
   line-height: 16px;
   margin-bottom: 0;
+  text-transform: capitalize;
 }
 
 .__namep{
   color: #000000;
   font-size: 14px;
+}
+.__namec{
+  text-transform: capitalize;
 }
 
 .__namepf{
@@ -685,6 +689,15 @@ color: #FFFFFF;
     border-radius: 10px;
     padding: 13px 6px;
     width: 100%;
+}
+.__exportbtn{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF !important;
+    background: #BBBA67;
+    border-radius: 10px;
+    padding: 10px 20px;
 }
 
 
