@@ -24,6 +24,10 @@ const getUsers = () => {
                 <td class="__namep">${
                   user.first_name + " " + user.last_name
                 } </td>
+                <td>
+                  <p style="margin:0;">${user.email}</p>
+                  <p>${user.phone_number}</p>
+                 </td>
                 <td class="__namepf">${user.gender} </td>
                 <td class="__namep">${user.business_name} </td>
                 <td class="__namec">${user.category_of_business} </td>

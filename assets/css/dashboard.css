@@ -178,7 +178,7 @@ a:focus, a:hover {
   top: 0%;
   background: #6E9944;
 /*  border-right: 0.6px solid rgba(45, 79, 147, 0.6);*/
-  width: 16.9%;
+  width: 15.9%;
   height: 100%;
   transition: all .6s ease;
   overflow-y: scroll;
@@ -385,7 +385,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 
 .__house {
-  /*margin: 5% auto !important;*/
+  /* margin: 5% auto !important; */
   /*width: 1066px !important;*/
   padding:25px;
 }
